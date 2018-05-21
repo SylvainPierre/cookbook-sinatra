@@ -1,0 +1,29 @@
+div h1 {
+  padding: 20px;
+}
+
+div p {
+  color: blue;
+}
+
+div ol {
+  background-color: #f7f9fc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 60px;
+}
+
+.button {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.textbox {
+  padding: 10px;
+}
+

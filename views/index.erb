@@ -1,0 +1,21 @@
+<h1>
+<b>Welcome to your cookbook!</b>
+</h1>
+
+<p>
+<b>These are your recipes</b>
+</p>
+
+<ol>
+<% @recipes.all.each_with_index do |recipe, index| %>
+  <li>
+    <% params[:number] = index %>
+    <%= "#{recipe.name} - #{recipe.description}" %>  <a href="/delete/<%=index%>">Delete</a>
+  </li>
+<% end %>
+</ol>
+<form action="/new" method="get">
+    <div class="button">
+         <button type="submit">Create your recipe</button>
+    </div>
+</form>
